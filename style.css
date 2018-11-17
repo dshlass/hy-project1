@@ -189,9 +189,7 @@ footer {
 	background: #F6F8FA;
 	width: 100%;
 	height: calc(40vh - 10%);
-	font-size: 1.9em;
-	border: 1px solid black;
-	
+	font-size: 1.9em;	
 }
 
 footer a {
