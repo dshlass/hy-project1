@@ -25,17 +25,15 @@ Medium Grey #777777
 Light Grey #F6F8FA
 */
 
+/*********Section 0: Utilities*******/
 body {
 	font-size: 62.5%;
 }
 
-
-header {
-	background: url('./assets/image-main.jpeg');
-	height: 100vh;
-	background-size: cover;
-	margin-bottom: 10%;
+.cb {
+	clear:both;
 }
+
 
 .fw-700 {
 	font-family: 'Raleway', sans-serif;
@@ -60,19 +58,43 @@ header {
 	margin: 0 auto;
 }
 
-.LOGO{
+
+/*******Section 1: Header*******/
+
+header {
+	background: url('./assets/image-main.jpeg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 7%;
+}
+
+.LOGO {
 	font-size: 3.9em;
 	color: #005769;
+	margin-bottom: 5%;
 }
 
 nav {
 	margin-top: 7%;
+	width: 50%;
+	text-align: right;
 }
 
 nav a {
 	font-size: 1.9em;
 	color: #333333;
 	text-decoration: none;
+	padding: 2%;
+}
+
+nav a:not(:last-child){
+	margin-right: 2%;
+}
+	
+nav a:hover {
+	background: #16D6D1;
+	border-radius: 5px;
 }
 
 h1 {
@@ -86,16 +108,19 @@ img {
 	width: 100%;
 }
 
+/*******Section 2: Gallery*******/
+
+.gallery {
+	margin-bottom: 2%;
+
+}
+
  .small-pic.fl-left{
 	margin-right: 2%;
 }
 
 .big-pic .fl-left {
 	margin-right: 2%;
-}
-
-.cb {
-	clear:both;
 }
 
 .small-pic {
@@ -107,8 +132,43 @@ width: 39%;
 	width: 59%;
 }
 
-.gallery {
-	margin-bottom: 2%;
+.gallery h3 {
+	margin-top: 0;
+	padding-top: 5%;
+	font-size: 2.2em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #777777;
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+.gallery h2 {
+	font-size: 3.9em;
+	color: #333333;
+	text-align: center;
+	padding: 0 10% 5%;
+}
+
+.gallery button {
+	display: block;
+	margin: 0 auto;
+	background: #16D6D1;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.gallery button a {
+	font-size: 1.9em;
+	text-decoration: none;
+	color: #333;
+
+}
+
+.bottom {
+	background: #F6F8FA; 
+	padding-bottom: 16.5%;
 }
 
 .half {
@@ -120,35 +180,49 @@ width: 39%;
 }
 
 .gallery:nth-child(3) {
-	margin-bottom: 10%;
+	margin-bottom: 7%;
 }
+
+/*******Section 3: Footer*******/
 
 footer {
 	background: #F6F8FA;
 	width: 100%;
-	height: 40vh;
-	font-size: 2em;
-	color: #777777;
+	height: calc(40vh - 10%);
+	font-size: 1.9em;
+	border: 1px solid black;
+	
+}
+
+footer a {
+		text-decoration: none;
+		color: #333333;
+		padding-bottom: 2%;
+		padding: 0 5%;
+		text-align: center;
+		line-height: 2em;
+		font-size: 1em
 }
 
 .footer-title {
-	margin-top: 2%;
+	margin-top: 1%;
 	width: 35%;
+	color: #005769;
+	font-size: 2em;
 }
 
 .footer-nav {
-	margin-top: 2%;
+	margin-top: 4%;
 	width: 10%;
 	text-align: center;
-	margin-right: 2%;
+	margin-right: 4%;
 }
 
 .footer-social {
-	margin-top: 2%;
-	width: 10%;
+	margin-top: 4%;
+	width: 8%;
 	text-align: center;
-	margin-right: 8%
-
+	margin-right: 8%;
 }
 
 .footer-lorem {
@@ -156,6 +230,13 @@ footer {
 	width: 35%;
 }
 
-footer .top {
+.footer-top {
+	padding-bottom: 4%;
 	border-bottom: 1px dotted black;
+	background: ;
+
+}
+
+.copyright {
+	color: #777777;
 }
