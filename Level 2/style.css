@@ -205,10 +205,6 @@ nav ul li {
 	margin-bottom: 18%;
 }
 
-figure:not(last-child){
-	margin-right: 2%;
-}
-
 figure:last-child {
 	margin: 0;
 }
@@ -216,9 +212,13 @@ figure:last-child {
 .half {
 	margin-top:0;
 	margin-left: 0;
-	width: 32%;
+	width: 49%;
 	margin-bottom: 7%;
 	position: relative;
+}
+
+.half:first-child {
+	margin-right: 2%;
 }
 
 .half figcaption {
@@ -229,7 +229,7 @@ figure:last-child {
 	left:0;
 	bottom: 0;
 	right: 0;
-	padding: 20% 5%;
+	padding: 15% 5%;
 }
 
 .half:hover figcaption {
