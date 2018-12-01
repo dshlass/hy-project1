@@ -52,7 +52,6 @@ p {
 	font-weight: 500;
 }
 
-
 a {
 	font-size: 1.9rem;
 	text-decoration: none;
@@ -63,7 +62,7 @@ img {
 	width: 100%;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
@@ -83,6 +82,21 @@ ul{
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.highlight, 
+.menu a:hover, 
+.content-menu:hover > a, 
+.sub-menu, 
+.gallery a {
+	box-shadow: 2px 2px rgba(20, 195, 190,0.5);
+	background: #16D6D1;
+}
+
+.gallery a, 
+.menu a:hover, 
+.highlight {
+	border-radius: 5px;
 }
 
 
@@ -127,24 +141,12 @@ nav ul li {
 	position: relative;
 }
 
-.content-menu {
+.highlight {
 	margin-right: 0;
 }
 
-.menu a:hover {
-	background: #16D6D1;
-	border-radius: 5px;
-	box-shadow: 2px 2px rgba(20, 195, 190,0.5);
-}
-
-.content-menu a:hover {
-	box-shadow: 0px 2px rgba(17 , 156 , 153 , 0.5);
-}
-
-.content-menu:hover > a {
-	background: #16D6D1;
+.content-menu:hover > a {  /*Keeps Blog highlighted when hovering over it's children*/
 	border-radius: 5px 5px 0px 0px;
-	box-shadow: 2px 2px rgba(20, 195, 190,0.5);
 }
 
 .content-menu:hover .sub-menu {
@@ -153,11 +155,9 @@ nav ul li {
 }
 
 .sub-menu {
-	background: #16D6D1;
 	position: absolute;
   display: none;
   border-radius: 0px 0px 5px 5px;
-  box-shadow: 2px 2px rgba(20, 195, 190,0.5);
 }	
 
 .sub-menu li {
@@ -173,17 +173,17 @@ nav ul li {
 .small-pic {
 	width: 39%;
 	margin-bottom: 2%;
+	box-shadow: 2px 2px rgba(197, 210, 223,0.5);
 }
 
 .small-pic:nth-child(odd),
-.large-pic:nth-child(odd){
+.large-pic:nth-child(odd) {
 	margin-right: 2%;
 }
 
 .large-pic {
 	width: 59%;
 	background: #F6F8FA;
-	margin-bottom: 2%;
 }
 
 .gallery h3 {
@@ -197,15 +197,12 @@ nav ul li {
 }
 
 .gallery a {
-	background: #16D6D1;
-	border-radius: 5px;
 	display: inline-block;
 	padding: 7px 15px;
-	box-shadow: 2px 2px rgba(20, 195, 190,0.5);
 	margin-bottom: 18%;
 }
 
-figure:not(last-child){
+figure:not(last-child) {
 	margin-right: 2%;
 }
 
@@ -224,7 +221,7 @@ figure:last-child {
 .half figcaption {
 	display: none;
 	position: absolute;
-	background: rgba(250,250,250,0.7);
+	background: linear-gradient(rgba(250,250,250,0.7), rgba(250,250,250,0.7));
 	top:0;
 	left:0;
 	bottom: 0;
@@ -278,7 +275,6 @@ footer p {
 	width: 8%;
 	margin-right: 8%;
 }
-
 
 .footer-lorem {
 	width: 35%;
